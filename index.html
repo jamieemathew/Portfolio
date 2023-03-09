@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <style>
+        body {
+          background-image: url('bg1.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+    </style>
+
+    <div class="portfolio-main">
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <nav>
+                    
+                    <!-- toggle bar -->
+                    <div class="toggle-bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="navigation-bar">
+                        <ul>
+                            
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">blog</a></li>
+                            <li class="hire-btn"><a href="#">Hire me</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+
+        <!-- main content -->
+        <div class="main-content">
+            <div class="container">
+                <div class="main-content-wrapper">
+                    <div class="col-left">
+                        <span>Hey I'm Jamie</span>
+                        <h1>Freelancer | Web Designer</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam nesciunt quasi vitae,
+                            quisquam ullam suscipit quos placeat iusto nihil, nam rerum? Vel nesciunt iste cum vero
+                            aspernatur maxime quo itaque? Laboriosam nesciunt quasi vitae,
+                            quisquam ullam suscipit quos</p>
+                        <a href="#" class="btn-main">
+                         my  works
+                        </a>
+                    </div>
+                    <div class="col-right">
+                        <img src="jamiee.jpg">
+                    </div>
+                </div>
+                <!-- experience -->
+                <div class="experience-section">
+                    <div class="experience-inner">
+                        <div class="col">
+                            <h3>2 years</h3>
+                            <p>experience</p>
+                        </div>
+                        <div class="col">
+                            <h3>15+</h3>
+                            <p>Happy clients</p>
+                        </div>
+                        <div class="col">
+                            <h3>15+</h3>
+                            <p>Projects completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $('.toggle-bar').on('click', function (event) {
+        $('this').toggleClass('open');
+        $('.navigation-bar').slideToggle('200');
+    })
+</script>
+
+</html>
